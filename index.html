@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teatro - A Arte de Encenar</title>
+  <link rel="icon" type="image/png" href="img/teatro.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <h1>Teatro <br><small>A Arte de Encenar</small></h1>
+    </div>
+<!--MENU-->
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="menu-principal">
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#sobre">SOBRE</a></li>
+        <li><a href="#generos">GÊNEROS</a></li>
+        <li><a href="#bibliografia">BIBLIOGRAFIA</a></li>
+
+        <li class="dropdown">
+          <a href="#creditos" class="dropbtn">CRÉDITOS</a>
+          <ul class="dropdown-content">
+            <li><a href="#orientadores">Orientadores</a></li>
+            <li><a href="#desenvolvedores">Desenvolvedores</a></li>
+          </ul>
+        </li>
+        <li><a href="#contato">CONTATO</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">IDIOMA</a>
+          <ul class="dropdown-content">
+            <li><a href="index.html"><img class="lang-flag" src="img/Flag_of_Brazil.svg.webp" alt="Bandeira do Brasil"><span>Português</span></a></li>
+            <li><a href="index-en.html"><img class="lang-flag" src="img/Flag_of_the_United_States_(1912-1959).svg.webp" alt="Bandeira dos Estados Unidos"><span>English</span></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+<!--_______-->
+  </header>
+
+  <section id="home" class="pagina hero">
+    <div class="conteudo-hero">
+      <h2>Bem-vindo ao mundo do Teatro</h2>
+      O teatro é a arte de encenar: a expressão do corpo, da voz e da emoção transformada em história viva diante de um público. Explore aqui a origem, os elementos e as aplicações dessa linguagem artística milenar.
+      <div class="imagem-destaque">
+        <img type="image/jpg" href="img/teatro.jpg">
+      </div>
+
+      <a href="#sobre" class="botao">Conheça mais ↓</a>
+    </div>
+  </section>
+
+  <section id="sobre" class="pagina">
+    <h2>O Teatro</h2>
+    <p>
+      Antes mesmo do surgimento da escrita e dos teatros construídos, os seres humanos
+      já utilizavam imitações para se comunicar e expressar experiências. Na Pré-História,
+      grupos imitavam animais durante rituais de caça, reproduziam movimentos do cotidiano
+      e representavam acontecimentos importantes por meio de gestos, sons, danças e pinturas
+      rupestres. Essas manifestações não eram peças teatrais como conhecemos hoje, mas já
+      apresentavam elementos fundamentais do teatro: a representação, a presença de um público
+      e a criação de uma narrativa por meio do corpo e da voz.
+    </p>
+    <p>
+      Na Grécia Antiga, essas práticas ganharam novas formas e passaram a fazer parte de
+      celebrações religiosas dedicadas a Dionísio, deus do vinho, da fertilidade e da festa.
+      Durante esses rituais, cantos, danças e homenagens foram se organizando até dar origem
+      a apresentações dramáticas. Com o tempo, os gregos passaram a construir espaços próprios
+      para os espetáculos, como os teatros ao ar livre, e desenvolveram recursos como máscaras,
+      figurinos, coros e personagens representados por atores.
+    </p>
+    <p>
+      A partir da experiência grega, o teatro passou a ser empregado não apenas em cerimônias
+      religiosas, mas também para refletir sobre a sociedade, os conflitos humanos, a política,
+      a justiça e os valores da comunidade. A tragédia apresentava histórias marcadas por dilemas
+      e sofrimento, enquanto a comédia utilizava o humor para criticar comportamentos e situações
+      do cotidiano. Assim, o teatro tornou-se uma forma de educação, reflexão e participação
+      coletiva, além de entretenimento.
+    </p>
+    <p>
+      Encenar é dar vida a um texto, transformando palavras em ação, gesto e emoção compartilhada
+      com o público em tempo real. Ao longo da história, o teatro se dividiu em diversos gêneros,
+      como tragédia, comédia e drama, e incorporou elementos como cenário, figurino, iluminação
+      e sonoplastia, tornando-se uma arte coletiva que une múltiplas linguagens em uma única
+      apresentação.
+    </p>
+  </section>
+
+  <section id="tipos" class="pagina">
+    <h2>Tipos de Teatro</h2>
+    <p>
+      <em>Teatro Musical:</em> Une atuação, canto e coreografias elaboradas em uma única apresentação.
+    </p>
+    <p>
+      <em>Monólogo:</em> Peça encenada por um único ator, que dialoga consigo mesmo ou com a plateia.
+    </p>
+    <p>
+      <em>Teatro de Rua (ou ao ar livre):</em> Ocorre em praças e parques, aproximando a arte do espaço público.
+    </p>
+    <p>
+      <em>Teatro de Fantoches e Bonecos:</em> Utiliza figuras manipuladas para contar histórias, muito comum no público infantil.
+    </p>
+    <p>
+      <em>Teatro de Sombras:</em> Projeta silhuetas em telas com o uso de luz e contraste.
+    </p>
+    <p>
+      <em>Teatro Interativo:</em> Exige a participação direta da plateia para o desenrolar da história.
+    </p>
+  </section>
+
+  <section id="generos" class="pagina">
+    <h2>Gêneros do Teatro</h2>
+    <ul class="lista-generos">
+      <li><strong>Tragédia:</strong> apresenta conflitos intensos, sofrimento e decisões difíceis vividas pelos personagens.</li>
+      <li><strong>Comédia:</strong> utiliza o humor para divertir o público e criticar costumes e comportamentos da sociedade.</li>
+      <li><strong>Drama:</strong> aborda conflitos humanos e situações emocionais de maneira realista e profunda.</li>
+      <li><strong>Auto:</strong> representa histórias curtas, muitas vezes com temas religiosos ou morais, usando personagens simbólicos.</li>
+      <li><strong>Musical:</strong> combina interpretação, música, canto e dança para desenvolver a narrativa.</li>
+      <li><strong>Farsa:</strong> emprega exageros, situações absurdas e humor para provocar o riso e a reflexão.</li>
+    </ul>
+  </section>
+
+
+  <section id="bibliografia" class="pagina">
+    <h2>Referências Usadas</h2>
+    <ol class="lista-bibliografia">
+      <li><a href="https://brasilescola.uol.com.br/artes/teatro.htm">História do teatro: quem criou, evolução, no Brasil - BrasilEscola</a></li>
+      <li><a href="https://pt.wikipedia.org/wiki/Teatro">Teatro – Wikipédia, a enciclopédia livre</li>
+      <li><a href="https://www.todamateria.com.br/historia-do-teatro/">A história do teatro: origem e evolução ao longo dos tempos - Toda Matéria</a></li>
+      <li><a href="https://dynamicsandlearning.com/pt/post/estrategias-uso-teatro-educacao/">Estratégias para o uso do teatro na educação - DynamicsAndLearning</a></li>
+      <li><a href="https://fastercapital.com/pt/contente/Teatro-aplicado--como-usar-o-drama-para-a-educacao-e-o-desenvolvimento-comunitario.html">Teatro aplicado como usar o drama para a educação e o desenvolvimento comunitário - FasterCapital</a></li>
+    </ol>
+  </section>
+
+
+  <section id="creditos" class="pagina">
+    <h2>Créditos</h2>
+
+    <div class="grupo-creditos">
+      <div id="orientadores" class="bloco">
+        <h3>Professores Orientadores</h3>
+        <ul>
+          <li><strong>-Profª Célia Aparecida Barufaldi</strong></li>
+            Graduação em Tecnologia em Processamento de Dados
+            Especialista em Análise de Sistemas
+            Especialista em Redes e Segurança de Dados
+          <li><strong>-Profº Waldir Ferreira da Silva Júnior</strong></li>
+            Graduação em Letras
+            Pós graduação em Psicopedagogia
+            Mestrado em Educação
+        </ul>
+      </div>
+
+      <div id="desenvolvedores" class="bloco">
+        <h3>Alunos Desenvolvedores</h3>
+        <ul>
+          <li>Laura Carolina Henrique dos Santos</li>
+          <li>Davi Candido Belchior Lavor</li>
+          <li>Kimi Kauan Lira Moreno</li>
+          <li>Felipe Jesus de Oliveira</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="contato" class="pagina">
+    <h2>Contato</h2>
+
+    <form class="form-contato" method="get" novalidate>
+      <label for="nome">Nome<image src="img/asterisk_20dp_EA3323_FILL0_wght400_GRAD0_opsz20.svg"></label>
+      <input
+        type="text"
+        id="nome"
+        name="nome"
+        placeholder="Digite seu nome completo"
+        required
+        minlength="3"
+      >
+
+      <label for="email">E-mail<image src="img/asterisk_20dp_EA3323_FILL0_wght400_GRAD0_opsz20.svg"></label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="seuemail@exemplo.com"
+        required
+      >
+
+      <label for="telefone">Telefone<image src="img/asterisk_20dp_EA3323_FILL0_wght400_GRAD0_opsz20.svg"></label>
+      <input
+        type="tel"
+        id="telefone"
+        name="telefone"
+        placeholder="(00) 00000-0000"
+        pattern="\(\d{2}\)\s?\d{4,5}-\d{4}"
+        required
+      >
+
+      <label for="avaliacao">Avalie nosso site<image src="img/asterisk_20dp_EA3323_FILL0_wght400_GRAD0_opsz20.svg"></label>
+      <select id="avaliacao" name="avaliacao" required>
+        <option value="" disabled selected>Selecione uma nota</option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+
+      <label for="comentario">Deixe seu comentário</label>
+      <textarea
+        id="comentario"
+        name="comentario"
+        rows="5"
+        maxlength="300"
+        placeholder="Escreva aqui sua opinião (máx. 300 caracteres)"
+      ></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!--ancora-->
+
+  <a href="#" class="ancora-flutuante"><image src="img/north_24dp_EA3323_FILL0_wght400_GRAD0_opsz24.svg" width="60" height="60"></a>
+
+  <footer>
+    <p>ETEC DE HORTOLÂNDIA 2026 – &copy; Todos os direitos reservados</p>
+    <p>Trabalho acadêmico sem fins lucrativos</p>
+  </footer>
+
+  <script>
+    document.getElementById('comentario').style.resize = 'none';
+
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menu = document.getElementById('menu-principal');
+
+    menuToggle.addEventListener('click', function () {
+      const menuAberto = menu.classList.toggle('menu-aberto');
+      menuToggle.setAttribute('aria-expanded', menuAberto);
+      menuToggle.setAttribute('aria-label', menuAberto ? 'Fechar menu' : 'Abrir menu');
+    });
+
+    menu.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        menu.classList.remove('menu-aberto');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.setAttribute('aria-label', 'Abrir menu');
+      });
+    });
+
+    const form = document.querySelector('.form-contato');
+    form.addEventListener('submit', function (e) {
+      if (!form.checkValidity()) {
+        e.preventDefault();
+        form.reportValidity();
+      }
+    });
+  </script>
+</body>
+</html>

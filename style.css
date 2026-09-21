@@ -1,0 +1,401 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #2b1b12;
+  background-color: #f5efe6;
+  line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+
+header {
+  background-color: #6b1220;
+  color: #f5efe6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.ancora-flutuante {
+  position: fixed;
+  bottom: 20px; 
+  right: 20px;    
+}
+
+a {
+  text-decoration: none;
+  color: #d10c2a;
+  font-weight: bold;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.logo .icone {
+  font-size: 2rem;
+}
+
+.logo h1 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.logo small {
+  font-size: 0.8rem;
+  font-weight: 300;
+  opacity: 0.85;
+}
+
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: 1px solid #d4af37;
+  border-radius: 4px;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 1.5rem;
+  height: 2px;
+  margin: 0.25rem;
+  background-color: #f5efe6;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #f5efe6;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #d4af37;
+}
+
+
+/* ===== SUB-MENU (DROPDOWN) ===== */
+li.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #6b1220;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  flex-direction: column;
+  gap: 0;
+  padding: 0.5rem 0;
+  border-radius: 0 0 6px 6px;
+  border: 1px solid #d4af37;
+  border-top: none;
+}
+
+.dropdown-content li {
+  width: 100%;
+}
+
+.dropdown-content li a {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem 1rem;
+  color: #f5efe6;
+  text-decoration: none;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-content li a:hover {
+  background-color: #4e0d17;
+  color: #d4af37;
+}
+
+.lang-flag {
+  width: 1.2rem;
+  height: 1.2rem;
+  object-fit: cover;
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  flex-shrink: 0;
+}
+
+/* Mostra o sub-menu ao passar o mouse */
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+
+.pagina {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  scroll-margin-top: 7rem;
+}
+
+.pagina h2 {
+  color: #6b1220;
+  border-bottom: 3px solid #d4af37;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.3rem;
+}
+
+.pagina em {
+  font-weight: bold;
+}
+
+
+.hero {
+  background: linear-gradient(rgba(20, 10, 10, 0.75), rgba(20, 10, 10, 0.75)),
+    url('https://images.unsplash.com/photo-1503095396549-807759245b35?auto=format&fit=crop&w=1400&q=60')
+      center/cover no-repeat;
+  color: #f5efe6;
+  min-height: 60vh;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.conteudo-hero {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.conteudo-hero h2 {
+  color: #d4af37;
+  border: none;
+  font-size: 2.2rem;
+}
+
+/* ===== ESTILO DA IMAGEM NA HOME ===== */
+.imagem-destaque {
+  margin: 1.5rem 0;
+  width: 100%;
+  max-width: 650px;
+}
+
+.imagem-destaque img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #d4af37;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  display: block;
+}
+
+.botao {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.8rem;
+  background-color: #d4af37;
+  color: #2b1b12;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.botao:hover {
+  background-color: #c19a2e;
+}
+
+.lista-generos li,
+.lista-bibliografia li {
+  margin-bottom: 0.8rem;
+  padding-left: 0.3rem;
+}
+
+.lista-generos {
+  list-style: square inside;
+}
+
+.lista-bibliografia {
+  list-style: decimal inside;
+}
+
+.grupo-creditos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.bloco {
+  background-color: #fff;
+  border: 1px solid #d4af37;
+  border-radius: 6px;
+  padding: 1.2rem 1.5rem;
+  flex: 1 1 250px;
+}
+
+.bloco h3 {
+  color: #6b1220;
+  margin-bottom: 0.6rem;
+}
+
+.bloco ul {
+  list-style: none;
+}
+
+.bloco li {
+  padding: 0.2rem 0;
+}
+
+
+.form-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  background-color: #fff;
+  border: 1px solid #d4af37;
+  border-radius: 6px;
+  padding: 2rem;
+}
+
+.form-contato label {
+  font-weight: 600;
+  color: #6b1220;
+  margin-top: 0.6rem;
+}
+
+.form-contato input,
+.form-contato select,
+.form-contato textarea {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.form-contato textarea {
+  resize: none;
+}
+
+.form-contato input:invalid:not(:placeholder-shown),
+.form-contato select:invalid {
+  border-color: #b3261e;
+}
+
+.form-contato button {
+  margin-top: 1.2rem;
+  padding: 0.7rem;
+  background-color: #6b1220;
+  color: #f5efe6;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.form-contato button:hover {
+  background-color: #4e0d17;
+}
+
+
+footer {
+  background-color: #2b1b12;
+  color: #d9c9b0;
+  text-align: center;
+  padding: 1.2rem;
+  font-size: 0.85rem;
+}
+
+
+@media (max-width: 600px) {
+  html,
+  .pagina {
+    scroll-padding-top: 12rem;
+    scroll-margin-top: 12rem;
+  }
+
+  header {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+  }
+
+  nav.menu-aberto {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    padding-top: 0.75rem;
+  }
+
+  nav > ul > li {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid rgba(212, 175, 55, 0.35);
+  }
+
+  nav > ul > li > a {
+    display: block;
+    padding: 0.65rem;
+  }
+
+  .dropdown-content {
+    position: static;
+    display: flex;
+    box-shadow: none;
+    border: none;
+    background-color: #4e0d17;
+  }
+
+  .grupo-creditos {
+    flex-direction: column;
+  }
+}
