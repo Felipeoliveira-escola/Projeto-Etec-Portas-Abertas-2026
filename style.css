@@ -16,7 +16,6 @@ html {
   scroll-padding-top: 7rem;
 }
 
-
 header {
   background-color: #6b1220;
   color: #f5efe6;
@@ -72,6 +71,7 @@ a {
   padding: 0.5rem;
   cursor: pointer;
 }
+
 
 .menu-toggle span {
   display: block;
@@ -180,6 +180,9 @@ li.dropdown {
   font-weight: bold;
 }
 
+.pagina p{
+  text-align: justify; 
+}
 
 .hero {
   background: linear-gradient(rgba(20, 10, 10, 0.75), rgba(20, 10, 10, 0.75)),
